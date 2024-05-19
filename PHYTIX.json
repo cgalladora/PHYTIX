@@ -1,0 +1,94 @@
+{
+  "threat_events": {
+    "description": "Incidents or occurrences posing physical threats.",
+    "attributes": {
+      "description": "string",
+      "location": "string",
+      "date_time": "string",
+      "severity": "string",
+      "targets": ["string"],
+      "methods_used": ["string"],
+      "casualties": "integer",
+      "damages": "string",
+      "information_sources": [
+        {
+          "source_name": "string",
+          "classification": "string"
+        }
+      ],
+      "trust_and_attribution": "string"
+    }
+  },
+  "threat_actors": {
+    "description": "Individuals or groups responsible for physical threats.",
+    "attributes": {
+      "name": "string",
+      "aliases": ["string"],
+      "affiliations": ["string"],
+      "motivations": ["string"],
+      "capabilities": ["string"],
+      "ttps": ["string"],
+      "information_sources": [
+        {
+          "source_name": "string",
+          "classification": "string"
+        }
+      ],
+      "trust_and_attribution": "string"
+    }
+  },
+  "indicators_of_compromise": {
+    "description": "Observable artifacts or behaviors indicating potential physical threats.",
+    "attributes": {
+      "description": "string",
+      "associated_threat_actors": ["string"],
+      "associated_threat_events": ["string"],
+      "recommended_response_actions": ["string"],
+      "information_sources": [
+        {
+          "source_name": "string",
+          "classification": "string"
+        }
+      ],
+      "trust_and_attribution": "string"
+    }
+  },
+  "mitigations_and_countermeasures": {
+    "description": "Strategies and technologies for preventing, detecting, or mitigating physical threats.",
+    "attributes": {
+      "description": "string",
+      "effectiveness": "string",
+      "cost": "string",
+      "deployment_requirements": ["string"],
+      "dependencies": ["string"],
+      "information_sources": [
+        {
+          "source_name": "string",
+          "classification": "string"
+        }
+      ],
+      "trust_and_attribution": "string"
+    }
+  },
+  "information_sources": {
+    "description": "Repositories or feeds of physical threat intelligence data.",
+    "attributes": {
+      "source_name": "string",
+      "classification": "string",
+      "reliability": "string",
+      "update_frequency": "string",
+      "access_permissions": ["string"],
+      "data_formats": ["string"],
+      "trust_and_attribution": "string"
+    }
+  },
+  "trust_and_attribution": {
+    "description": "Mechanisms for verifying the credibility and authenticity of physical threat intelligence.",
+    "attributes": {
+      "source_credibility": "string",
+      "peer_reviews": "string",
+      "consensus": "string"
+    }
+  }
+}
+
